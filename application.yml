@@ -1,1 +1,15 @@
+spring:
+  cloud:
+    vault:
+      uri: http://vault:8200
+      authentication: TOKEN
+      token: root
+      kv:
+        enabled: true
+        backend: secret
+
+# Common logging for all services
+logging:
+  level:
+    root: INFO
 
